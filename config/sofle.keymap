@@ -33,11 +33,11 @@
         lower_layer {
 // TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
-// |   F12 |  F1 |  F2 |  F3  |  F4  |  F5  |                   | N.Lck |  =   |  /    |  *   |  -    |    &  |
-// |       |     |     |      |      |      |                   |  Del |   7   |   8   |  9   |   +   |   } ] |
-// |       |     |     |      |      |      |                   | PgDn |   4   |   5   |  6   |       |   { [ |
-// | SHIFT |     |     |      |      |      |        |  |       |  {   |   1   |   2   |  3   |       | SHIFT |
-//               | CAPS| RAlt | RCtrl|      | Enter  |  | Space |      | RCtrl |   0   |  ,   |
+// |   F12 |  F1 |  F2 |  F3  |  F4  |  F5  |                   | N.Lck |  =    |  /    |  *   |   -   |    &  |
+// |       |     |     |      |      |      |                   |  Del  |   7   |   8   |  9   |   +   |   } ] |
+// |       |     |     |      |      |      |                   |       |   4   |   5   |  6   |       |   { [ |
+// | SHIFT |     |     |      |      |      |        |  |       |       |   1   |   2   |  3   |       | SHIFT |
+//               | CAPS| RAlt | RCtrl|      | Enter  |  | Space |       | RCtrl |   0   |  ,   |
             bindings = <
 &kp F12    &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                            &kp LNLCK &kp EQUAL &kp FSLH  &kp ASTR   &kp KP_MINUS   &kp AMPR
 &trans     &trans    &trans    &trans      &trans    &trans                            &kp DEL   &kp N7    &kp N8    &kp N9     &kp KP_PLUS    &kp RBKT
