@@ -33,17 +33,17 @@
         lower_layer {
 // TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
-// |   F12 |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
-// |       |     |     |      |      |      |                   |  Del | Ins   |       |  -   |   +   |   } ] |
-// |       |     |     |      |      |      |                   | PgDn |       |       |      |       |   { [ |
-// | RSHFT |     |     |      |      |      |        |  |       |  {   |  }    |  HOME |  End |   |\  | RShft |
-//               | CAPS| RAlt | RCtrl|      | Enter  |  | Space |      | RCtrl | LAlt  | RWin |
+// |   F12 |  F1 |  F2 |  F3  |  F4  |  F5  |                   | N.Lck |  =   |  /    |  *   |  -    |    &  |
+// |       |     |     |      |      |      |                   |  Del |   7   |   8   |  9   |   +   |   } ] |
+// |       |     |     |      |      |      |                   | PgDn |   4   |   5   |  6   |       |   { [ |
+// | SHIFT |     |     |      |      |      |        |  |       |  {   |   1   |   2   |  3   |       | SHIFT |
+//               | CAPS| RAlt | RCtrl|      | Enter  |  | Space |      | RCtrl |   0   |  ,   |
             bindings = <
-&kp F12    &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                            &kp F6    &kp F7    &kp F8    &kp F9          &kp F10        &kp F11
-&trans     &trans    &trans    &trans      &trans    &trans                            &kp DEL   &kp INS   &trans    &kp KP_MINUS    &kp KP_PLUS    &kp RBKT
-&trans     &trans    &trans    &trans      &trans    &trans                            &kp PG_DN &trans    &trans    &trans          &trans         &kp LBKT
-&kp RSHFT  &trans    &trans    &trans      &trans    &trans     &trans     &trans      &kp LBRC  &kp RBRC  &kp HOME  &kp END         &kp BSLH       &kp RSHFT
-                     &kp CLCK  &kp RALT    &kp RCTRL &trans     &kp RET    &kp SPACE   &trans    &kp RCTRL  &kp LALT   &kp RGUI
+&kp F12    &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                            &kp LNLCK &kp EQUAL &kp FSLH  &kp ASTR   &kp KP_MINUS   &kp AMPR
+&trans     &trans    &trans    &trans      &trans    &trans                            &kp DEL   &kp 7     &kp 8     &kp 9      &kp KP_PLUS    &kp RBKT
+&trans     &trans    &trans    &trans      &trans    &trans                            &trans    &kp 4     &kp 5     &kp 6      &trans         &kp LBKT
+&kp LSHFT  &trans    &trans    &trans      &trans    &trans     &trans     &trans      &trans    &kp 1     &kp 2     &kp 3      &trans         &kp RSHFT
+                     &kp CLCK  &kp RALT    &kp RCTRL &trans     &kp RET    &kp SPACE   &trans    &kp RCTRL &kp 0     &kp COMMA
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -51,16 +51,16 @@
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |ESC  |      |      |       |       |      |                |      |      | Print |  _   | + =   | PgUp  |
-// |     |      |      |       |       |      |                | Del  |      |   ^   |  -   | +     |  } ]  |
-// |     |      |      |       |       |      |                | PGDN |   <- |   v   |  ->  | N.Lck | { [   |
-// |LShit|      |      |       |       |      |      |  |      |   {  |  }   |  Home |  End | | \   | LShft |
+// | F12 |   F1 |  F2  |  F3   |  F4   |  F5  |                |  F6  |  F7  |  F8   |  F9  |  F10  |  F11  |
+// |     |      |      |       |       |      |                | Del  |      |   ^   |      |       |  } ]  |
+// |PrtSc|  Ins | Home | PgUp  |       |      |                |      |   <- |   v   |  ->  |       | { [   |
+// |LShit|  Del | End  | PgDn  |       |      |      |  |      |   {  |  }   |       |      | | \   | LShft |
 //              | CAPS |  LAlt | RCtl  |      |Enter |  | Space|      | RCtrl| LAlt  | LWin |
             bindings = <
-&kp ESC    &trans       &trans       &trans       &trans       &trans                                &trans    &trans    &kp PSCRN  &kp UNDER       &kp EQUAL    &kp PG_UP
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                          &kp DEL   &trans    &kp UP     &kp KP_MINUS    &kp KP_PLUS  &kp RBKT
-&trans     &trans       &trans       &trans       &trans       &trans                                &kp PG_DN &kp LEFT  &kp DOWN   &kp RIGHT       &kp LNLCK    &kp LBKT
-&kp LSHFT  &trans       &trans       &trans       &trans       &trans        &trans      &trans      &kp LBRC  &kp RBRC  &kp HOME   &kp END         &kp BSLH     &kp LSHFT 
+&kp F12    &kp F1       &kp F2       &kp F3       &kp F4       &kp F5                                &kp F6    &kp F7    &kp F8     &kp F9          &kp F10      &kp F11
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                          &kp DEL   &trans    &kp UP     &trans          &trans       &kp RBKT
+&kp PrtSc  &kp Ins      &kp home     &kp PgUp     &trans       &trans                                &trans    &kp LEFT  &kp DOWN   &kp RIGHT       &trans       &kp LBKT
+&kp LSHFT  &kp DEL      &kp END      &kp PG_DN    &trans       &trans        &trans      &trans      &kp LBRC  &kp RBRC  &trans     &trans          &kp BSLH     &kp LSHFT 
                         &kp CLCK     &kp LALT     &kp RCTRL    &trans        &kp RET     &kp SPACE   &trans    &kp RCTRL &kp LALT   &kp LWIN
             >;
 
