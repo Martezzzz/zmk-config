@@ -40,9 +40,9 @@
 //               | CAPS| RAlt | RCtrl|      | Enter  |  | Space |      | RCtrl |   0   |  ,   |
             bindings = <
 &kp F12    &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                            &kp LNLCK &kp EQUAL &kp FSLH  &kp ASTR   &kp KP_MINUS   &kp AMPR
-&trans     &trans    &trans    &trans      &trans    &trans                            &kp DEL   &kp 7     &kp 8     &kp 9      &kp KP_PLUS    &kp RBKT
-&trans     &trans    &trans    &trans      &trans    &trans                            &trans    &kp 4     &kp 5     &kp 6      &trans         &kp LBKT
-&kp LSHFT  &trans    &trans    &trans      &trans    &trans     &trans     &trans      &trans    &kp 1     &kp 2     &kp 3      &trans         &kp RSHFT
+&trans     &trans    &trans    &trans      &trans    &trans                            &kp DEL   &kp N7    &kp N8    &kp N9     &kp KP_PLUS    &kp RBKT
+&trans     &trans    &trans    &trans      &trans    &trans                            &trans    &kp N4    &kp N5    &kp N6     &trans         &kp LBKT
+&kp LSHFT  &trans    &trans    &trans      &trans    &trans     &trans     &trans      &trans    &kp N1    &kp N2    &kp N3     &trans         &kp RSHFT
                      &kp CLCK  &kp RALT    &kp RCTRL &trans     &kp RET    &kp SPACE   &trans    &kp RCTRL &kp 0     &kp COMMA
             >;
 
