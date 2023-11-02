@@ -37,13 +37,13 @@
 // |   (   |  )  |     |      |      |      |                   |  Del  |   7   |   8   |  9   |   +   |   } ] |
 // |       |     |     |      |      |      |                   |       |   4   |   5   |  6   |       |   { [ |
 // | SHIFT |     |     |      |      |      |        |  |       |       |   1   |   2   |  3   |   .   | SHIFT |
-//               | CAPS| RAlt | RCtrl|      | Enter  |  | Space |       | RCtrl |   0   |  ,   |
+//               | CAPS| RAlt | RCtrl|      | Enter  |  | Space |       | BKSPC |   0   |  ,   |
             bindings = <
 &kp F12    &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                            &trans    &kp KP_EQUAL &kp KP_SLASH &kp KP_ASTERISK &kp KP_MINUS   &kp AMPS
 &kp LPAR   &kp RPAR  &trans    &trans      &trans    &trans                            &kp DEL   &kp N7       &kp N8       &kp N9          &kp KP_PLUS    &kp RBKT
 &trans     &trans    &trans    &trans      &trans    &trans                            &trans    &kp N4       &kp N5       &kp N6          &trans         &kp LBKT
 &kp LSHFT  &trans    &trans    &trans      &trans    &trans     &trans     &trans      &trans    &kp N1       &kp N2       &kp N3          &kp KP_DOT     &kp RSHFT
-                     &kp CLCK  &kp RALT    &kp RCTRL &trans     &kp RET    &kp SPACE   &trans    &kp RCTRL    &kp N0       &kp KP_DOT
+                     &kp CLCK  &kp RALT    &kp RCTRL &trans     &kp RET    &kp SPACE   &trans    &kp BSPC     &kp N0       &kp KP_DOT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
