@@ -33,15 +33,15 @@
         lower_layer {
 // TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
-// |   F12 |  F1 |  F2 |  F3  |  F4  |  F5  |                   |       |  =    |  /    |  *   |   -   |   _   |
-// |       |  (  |  )  |      |      |      |                   |  Del  |   7   |   8   |  9   |   +   |   &   |
-// |       |     |     |      |      |      |                   |       |   4   |   5   |  6   |       |   %   |
+// |   F12 |  F1 |  F2 |  F3  |  F4  |  F5  |                   |       |   =   |  /    |  *   |   -   |   =+  |
+// |       |  (  |  )  |      |      |      |                   |  Del  |   7   |   8   |  9   |   +   |   -_  |
+// |       |     |     |      |      |      |                   |       |   4   |   5   |  6   |       |       |
 // | SHIFT |     |     |      |      |      |        |  |       |       |   1   |   2   |  3   |   .   | SHIFT |
 //               | CAPS| RAlt | RCtrl|      | Enter  |  | Space |       | BKSPC |   0   |  ,   |
             bindings = <
-&kp F12    &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                            &trans    &kp KP_EQUAL &kp KP_SLASH &kp KP_ASTERISK &kp KP_MINUS   &kp MINUS
-&trans     &kp LPAR  &kp RPAR  &trans      &trans    &trans                            &kp DEL   &kp N7       &kp N8       &kp N9          &kp KP_PLUS    &kp AMPS
-&trans     &trans    &trans    &trans      &trans    &trans                            &trans    &kp N4       &kp N5       &kp N6          &trans         &kp PRCNT
+&kp F12    &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                            &trans    &kp KP_EQUAL &kp KP_SLASH &kp KP_ASTERISK &kp KP_MINUS   &kp EQUAL
+&trans     &kp LPAR  &kp RPAR  &trans      &trans    &trans                            &kp DEL   &kp N7       &kp N8       &kp N9          &kp KP_PLUS    &kp MINUS
+&trans     &trans    &trans    &trans      &trans    &trans                            &trans    &kp N4       &kp N5       &kp N6          &trans         &trans
 &kp LSHFT  &trans    &trans    &trans      &trans    &trans     &trans     &trans      &trans    &kp N1       &kp N2       &kp N3          &kp KP_DOT     &kp RSHFT
                      &kp CLCK  &kp RALT    &kp RCTRL &trans     &kp RET    &kp SPACE   &trans    &kp BSPC     &kp N0       &kp KP_DOT
             >;
